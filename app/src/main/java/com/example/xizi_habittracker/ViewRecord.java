@@ -1,5 +1,6 @@
 package com.example.xizi_habittracker;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class ViewRecord extends ActionBarActivity {
+public class ViewRecord extends Activity {
 
     public static ArrayAdapter<Habit> adapter;
 
@@ -19,6 +20,7 @@ public class ViewRecord extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_record);
 
+        //setup a new adpater
         adapter = new ArrayAdapter<Habit>(this,R.layout.list_all_habits, AddNewHabit.habits.getHabits());
         ListView listView = (ListView) findViewById(R.id.listView2);
         listView.setAdapter(adapter);
@@ -27,8 +29,6 @@ public class ViewRecord extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                //Habit habit = AddNewHabit.habits.getHabits().get(i);
-                //String habitName = habit.getHabitName();
                 Intent intent = new Intent(ViewRecord.this, HabitHistory.class);
                 intent.putExtra("HABIT_NAME", i);
                 startActivity(intent);

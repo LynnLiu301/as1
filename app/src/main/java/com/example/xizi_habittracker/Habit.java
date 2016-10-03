@@ -6,6 +6,11 @@ import java.util.Date;
 
 /**
  * Created by xizi on 9/30/16.
+ * There is one of mine main class
+ * habit class contains name, create date, how many times it finished per day
+ * In total how many times it finished
+ * week plan, which day user wants it to happen
+ * and the total completion record
  */
 public class Habit {
 

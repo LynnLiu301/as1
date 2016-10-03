@@ -13,7 +13,9 @@ import java.util.Date;
 
 /**
  * Created by yfan2 on 10/2/16.
+ * Here is the customermize adapter, which can turn the per list view color when todays count > 0(finished once)
  */
+
 public class CustomerAdapter extends ArrayAdapter<Habit> {
     public CustomerAdapter(Context context, ArrayList<Habit> users) {
         super(context, 0, users);
@@ -28,6 +30,7 @@ public class CustomerAdapter extends ArrayAdapter<Habit> {
             v = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
+        //to determine if the habit finish today
         Date todayDate= new Date();
         Calendar today    = Calendar.getInstance();
         Calendar habitDay = Calendar.getInstance();
@@ -41,8 +44,11 @@ public class CustomerAdapter extends ArrayAdapter<Habit> {
             }
         }
 
+        //set up the text view
         TextView myHabit = (TextView) v.findViewById(R.id.Main_textView);
 
+
+        //if it finished, turn the backgroup color
         if ( count > 0) {
             myHabit.setBackgroundResource(R.color.greyred);
         }

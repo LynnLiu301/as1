@@ -139,9 +139,6 @@ public class MainActivity extends Activity {
             AddNewHabit.habits.setHabits(oldhabits);
         } catch (FileNotFoundException e) {
             // Throw new RuntimeException();
-        } catch (IOException e) {
-            // throw new RuntimeException
-            throw new RuntimeException();
         }
 
     }

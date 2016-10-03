@@ -1,5 +1,6 @@
 package com.example.xizi_habittracker;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,9 +14,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class TodayHabitDetail extends ActionBarActivity {
+public class TodayHabitDetail extends Activity {
     private Habit habit = null;
-    private ArrayAdapter<Date> adapterToday;
     private Bundle bundle1;
     private Integer count = 0;
 
@@ -33,27 +33,16 @@ public class TodayHabitDetail extends ActionBarActivity {
 
         if(bundle1!= null)
         {
-            //TODO here get the string stored in the string variable and do
+            //get the information from previous activity
             int i = bundle1.getInt("HABIT_1");
-            //habit = AddNewHabit.habits.getHabits().get(i);
             habit = MainActivity.todayHabits.getHabits().get(i);
         }
 
         TextView habitName = (TextView) findViewById(R.id.textView10);
         habitName.setText(habit.getHabitName());
 
-        /*Integer size = habit.getCompletionRecord().size();
-        Date todaydate= new Date();
-        Integer i = 0;
-        while (size > i){
-            if ( habit.getCompletionRecord().contains(todaydate)){
-                count = count +1;
-            }
-            i = i+1;
-        }
-        //habitCount.setText(i.toString());
-        habitCount.setText(habit.getCompletionRecord().get(i-1).toString());*/
 
+        //get today's completion count
         Date todayDate= new Date();
         Calendar today    = Calendar.getInstance();
         Calendar habitDay = Calendar.getInstance();
@@ -67,6 +56,7 @@ public class TodayHabitDetail extends ActionBarActivity {
             }
         }
 
+        //show the today's compltion count
         TextView todayHabitCount = (TextView) findViewById(R.id.textView13);
         todayHabitCount.setText(count.toString());
 
@@ -95,6 +85,7 @@ public class TodayHabitDetail extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //here is the completion function which can add one completion record
     public void addCompletionOnce(View view){
         habit.addCompletionRecord();
 

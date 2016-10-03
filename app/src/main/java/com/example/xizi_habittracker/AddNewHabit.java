@@ -62,7 +62,7 @@ public class AddNewHabit extends ActionBarActivity {
         Sun  = (CheckBox) findViewById(R.id.checkBox7);
 
 
-
+        //here is click button listner
         saveButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 setResult(RESULT_OK);

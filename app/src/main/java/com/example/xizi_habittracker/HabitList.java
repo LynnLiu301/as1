@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 /**
  * Created by yfan2 on 9/30/16.
+ * here is one of mine main class
+ *it contains all habit
+ * it has function to add and remove the habit into/from the list
  */
 public class HabitList {
     private ArrayList<Habit> Habits;

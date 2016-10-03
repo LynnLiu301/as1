@@ -15,57 +15,32 @@ import java.util.ArrayList;
 
 public class HabitHistory extends ActionBarActivity {
     private Habit habit = null;
-    //private ArrayAdapter<Completion> adapter_history;
-    //private Adapter adapter_history;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_habit_history);
-        //Habit habit = null;
 
+        //get information from pervious activity
         Bundle bundle = getIntent().getExtras();
 
+        //to check if we get the information from previous activity
         if(bundle!= null)
         {
-            //TODO here get the string stored in the string variable and do
+            //get the bundle
             int i = bundle.getInt("HABIT_NAME");
             habit = AddNewHabit.habits.getHabits().get(i);
         }
 
+        //show the habit name
         TextView habitName = (TextView) findViewById(R.id.textView6);
         habitName.setText(habit.getHabitName());
 
+        //show the total count of the habit completion
         TextView habitCount = (TextView) findViewById(R.id.textView9);
         habitCount.setText(habit.getTotalCount().toString());
 
-        //here is the new try
-        /*
-        Button resetCompletion = (Button) findViewById(R.id.button4);
-        resetCompletion.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-                setResult(RESULT_OK);
-                habit.deleteTotalCount();
-                adapter_history.notify();
-                //saveInFile();
-
-            }
-        });*/
-
-        /*Button deleteHabit = (Button) findViewById(R.id.button3);
-        deleteHabit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                AddNewHabit.habits.removeHabit(habit);
-
-
-                finish();
-
-
-            }
-
-
-        });;*/
 
     }
 
@@ -73,14 +48,7 @@ public class HabitHistory extends ActionBarActivity {
     protected void onStart() {
         super.onStart();
 
-        /*ArrayList<Completion> completion = new ArrayList<>();
-        completion = habit.getCompletionRecord();
-        //adapter_history = new ArrayAdapter<Completion>(this, R.layout.list_item, completion);
-        adapter_history = new Adapter() {
-
-        }
-        completion.setAdapter(adapter_history);*/
-
+        //on lick listener for update the viewHistory activity
         Button deleteHabit = (Button) findViewById(R.id.button3);
         deleteHabit.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -116,6 +84,8 @@ public class HabitHistory extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+    //button function for clear the completion habit and re-show the textview which new number
     public void resetCompletion(View v){
         habit.deleteTotalCount();
         TextView habitCount = (TextView) findViewById(R.id.textView9);
