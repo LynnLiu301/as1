@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Xizi-HabitTracker</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_new_habit">AddNewHabit</string>
+    <string name="title_activity_view_reocrd">view_reocrd</string>
+    <string name="title_activity_view_record">ViewRecord</string>
+    <string name="title_activity_habit_history">HabitHistory</string>
+    <string name="title_activity_today_habit_detail">TodayHabitDetail</string>
+</resources>

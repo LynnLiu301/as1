@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/cshome/yfan2/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/cshome/yfan2/Desktop/301/Xizi-HabitTracker/app/build/intermediates/pre-dexed/debug/gson-2.7-2d4645104ad4b1ff5fd2d1853ee84de817c2c79c.jar" />
+    </item>
+
+</items>
