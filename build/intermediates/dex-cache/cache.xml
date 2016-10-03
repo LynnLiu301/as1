@@ -2,11 +2,39 @@
 <items version="2" >
 
     <item
+        jar="/cshome/yfan2/Desktop/as1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/cshome/yfan2/Desktop/as1/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-651782f210d85abc25921d822389eacf5d17fe5e.jar" />
+    </item>
+    <item
+        jar="/cshome/yfan2/Desktop/as1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/cshome/yfan2/Desktop/as1/app/build/intermediates/pre-dexed/debug/classes-a85ec62cec1c2c0ea5da09bb496da6fd7f9d70f9.jar" />
+    </item>
+    <item
+        jar="/usr/local/share/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/cshome/yfan2/Desktop/as1/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-6b8f43d628bde674586e533393329d929d7ff825.jar" />
+    </item>
+    <item
         jar="/cshome/yfan2/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/cshome/yfan2/Desktop/301/Xizi-HabitTracker/app/build/intermediates/pre-dexed/debug/gson-2.7-2d4645104ad4b1ff5fd2d1853ee84de817c2c79c.jar" />
+        <dex dex="/cshome/yfan2/Desktop/as1/app/build/intermediates/pre-dexed/debug/gson-2.7-2d4645104ad4b1ff5fd2d1853ee84de817c2c79c.jar" />
+    </item>
+    <item
+        jar="/cshome/yfan2/Desktop/as1/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/cshome/yfan2/Desktop/as1/app/build/intermediates/pre-dexed/debug/classes-508b1079eed05abf112d898cef44712fefe44408.jar" />
     </item>
 
 </items>

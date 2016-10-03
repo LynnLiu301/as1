@@ -1,5 +1,6 @@
 package com.example.xizi_habittracker;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
@@ -29,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private CustomerAdapter adapter1;
     public static HabitList todayHabits = new HabitList();
